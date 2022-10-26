@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Contact us</title>
+    <link href="stylesheet.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+
+    <div class="header">
+        <img id="logo" src="./imgs/greek-symbol-royaltyfree.jpg" alt="header logo">
+        
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Sources</button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="https://pixabay.com/photos/acropolis-athens-greece-parthenon-5426750/">Acropolis picture</a>
+              <a href="https://www.pexels.com/fr-fr/photo/art-statue-sculpture-antiquite-13097962/">Queen Idyia</a>
+              <a href="https://www.pexels.com/fr-fr/photo/art-statue-sculpture-beton-11055150/">Princess Madeas</a>
+              <a href="https://www.pexels.com/fr-fr/photo/art-blanc-statue-visage-1887920/">King Aeetes</a>
+              <a href="https://pixabay.com/photos/romans-gladiator-spear-hoplite-60601/">Hoplite</a>
+            </div>
+        </div>
+
+        <ul id="horizontal-list">
+            <li><a href="./index.html">About</a></li>
+            <li><a href="./royal-family.html">Royal Family</a></li>
+            <li><a href="./assets.html">Royal Assets</a></li>
+            <li><a href="./contact.html">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <div class="contact-form-container">
+        <h2>Contact Us!</h2>
+            <form id="contact-form" name="contact-form">
+                <div>
+                    <div>
+                        <label for="first-name">First Name</label>
+                        <input required maxlength="15" id="first-name" placeholder="Alexander">
+                    </div>
+                    <div>
+                        <label for="last-name">Last Name</label>
+                        <input required maxlength="15" id="last-name" placeholder="The Great">
+                    </div>
+                </div>
+
+                <div>
+                    <div>
+                        <label for="email-addr">Email address</label>
+                        <input required maxlength="25" id="email-addr" placeholder="WTH is an email address?!">
+                    </div>
+                    <div>
+                        <label for="phone-input">Phone</label>
+                        <input required maxlength="25" id="phone-input" placeholder="No idea what this is either...">
+                    </div>
+                </div>
+
+                <div>
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="5" placeholder="Optional"></textarea>
+                </div>
+
+                <button id="contact-us-button">Submit</button>
+            </form>
+    </div>
+
+    <div class="footer">
+      Copyright &copy; Me, Myself and I
+    </div>
+    
+    <script>
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+    </script>
+  </body>
+</html>
