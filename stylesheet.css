@@ -1,0 +1,319 @@
+/*Common styles start*/
+
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+ul {
+    list-style: none;
+}
+
+ul#horizontal-list li {
+    display: inline-block;
+    align-content: center;
+    justify-content: center;
+    font-size: 25px;
+    margin-left: 20px;
+    margin-right: 30px;
+    color: white;
+}
+
+li a {
+    color: white;
+    text-decoration: none;
+}
+ li a:hover {
+    text-decoration: underline white;
+ }
+
+#logo {
+    max-width: 70px;
+    border: solid black;
+    border-radius: 50px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 10%;
+    background-color: #1F2937;
+}
+
+.footer {
+    position: fixed;
+    padding: 10px 10px 0px 10px;
+    bottom: 0;
+    color: white;
+    width: 100%;
+    height: 40px;
+    background-color: #1F2937;
+    text-align: center;
+}
+
+.dropbtn {
+    background-color: #1F2937;
+    border-radius: 12px;
+    color: white;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border: solid white;
+    cursor: pointer;
+    font-size: 20px;
+    border: 3px solid;
+    border-radius: 16em;
+    position: relative;
+    animation: colorChange 0.75s infinite;
+    animation-direction: alternate;
+  }
+  
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: white;
+    color: black;
+    border: solid #1F2937;
+    text-shadow: 3px 3px 3px white;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    margin-top: 14px;
+    background-color: #1F2937;
+    min-width: 160px;
+    overflow: auto;
+    z-index: 1;
+    color: white;
+  }
+  
+  .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown a:hover {    
+    text-shadow: 3px 3px 3px white;
+}
+  
+  .show {
+  display: block;
+}
+
+/*Common styles end*/
+
+
+/*Page 1 start*/
+
+.title {
+    background-color: white;
+    padding-top: 5px;
+}
+
+.title h1 {
+    position: absolute;
+    top: 19%;
+    left: center;
+    right: center;
+    font-size: 30px;
+    width: 100%;
+    height: 26px;
+    padding: 0;
+    margin: 0;
+    margin-top: -13px;
+    text-align: center;
+    font-family: Verdana;
+    color: white;
+    text-shadow: 3px 3px 3px black;
+}
+
+#title-img {
+    display: flex;
+    justify-self: center;
+    z-index: 1;
+    max-width: 100%;
+    max-height: 65vh;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+}
+
+.about {
+    justify-content: center;
+    gap: 10px;
+    background-color: white;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.about h2 {
+    font-size: 25px;
+}
+
+.about p {
+    font-size: 18px;
+}
+
+/*Page 1 end*/
+
+/*page 2 start*/
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 0%;
+    align-items: left;
+    margin-bottom: auto;
+    background-color: white;
+}
+
+.card-container {
+    font-size: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.container h2 {
+    font-size: 40px;
+    font-weight: bolder;
+    margin-left: 10%;
+    padding: 45px 0px;
+}
+
+#card-img {
+    aspect-ratio: 14/20;
+    max-width: 300px;
+    width: auto;
+    border: solid #3882F6;
+    border-radius: 15px;
+    font-size: 30px;
+}
+
+.card-text {
+    text-align: center;
+    padding: 10px 30px;
+    justify-content: center;
+    max-width: 250px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+/*page 2 end*/
+
+/*page 3 start*/
+
+.assets-container {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 0 10%;
+}
+
+.assets-container h2 {
+    font-size: 40px;
+    font-weight: bolder;
+    padding: 45px 0px;
+}
+
+tr {
+    font-size: 25px;
+}
+
+table {
+    border-collapse: collapse;
+    border: 2px solid black;
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+}
+
+td, th {
+    border: 1px solid black;
+    padding: 10px 20px;
+}
+
+th {
+    background-color: gray;
+}
+
+td {
+    text-align: center;
+}
+  
+tr:nth-child(even) td {
+    background-color: white;
+}
+  
+tr:nth-child(odd) td {
+    background-color: lightgray;
+}
+
+  /*page 3 end*/
+
+  /*page 4 start*/
+
+  .contact-form-container {
+    font-size: 25px;
+    font-weight: bold;
+    text-shadow: 3px 3px 3px white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    background-image: url(./imgs/hoplite-wiki.jpg);
+    background-size: 960px 632px;
+    background-repeat: no-repeat;
+    background-attachment: local;
+    padding: 0 10%;
+    padding-bottom: 20px;
+    margin: 0 25%;
+    margin-top: 50px;
+  }
+
+.contact-form-container h2 {
+    font-size: 40px;
+    font-weight: bolder;
+    padding: 45px 0px;
+}
+
+input, textarea {
+    font-size: 20px;
+    margin-top: 20px;
+    font-style: italic;
+}
+
+label {
+    padding: 40px;
+}
+
+#message {
+  vertical-align: middle;
+}
+
+#contact-us-button {
+    background-color: #3882F6;
+    border-radius: 10px;
+    max-width: max-content;
+    padding: 8px 10px;
+    color: #E5E7EB;
+    border: none;
+    margin-left: 65%;
+    margin-top: 20px;
+    font-size: 16px;
+}
+ /*page 4 end*/
+
+
+
+  

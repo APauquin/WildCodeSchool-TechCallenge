@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Web Development Tech Challenge</title>
+    <link href="stylesheet.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+
+    <div class="header">
+      <img id="logo" src="./imgs/greek-symbol-royaltyfree.jpg" alt="header logo">
+      
+      <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">Sources</button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="https://pixabay.com/photos/acropolis-athens-greece-parthenon-5426750/">Acropolis picture</a>
+          <a href="https://www.pexels.com/fr-fr/photo/art-statue-sculpture-antiquite-13097962/">Queen Idyia</a>
+          <a href="https://www.pexels.com/fr-fr/photo/art-statue-sculpture-beton-11055150/">Princess Madeas</a>
+          <a href="https://www.pexels.com/fr-fr/photo/art-blanc-statue-visage-1887920/">King Aeetes</a>
+          <a href="https://pixabay.com/photos/romans-gladiator-spear-hoplite-60601/">Hoplite</a>
+        </div>
+      </div>
+
+      <ul id="horizontal-list">
+        <li><a href="./index.html">About</a></li>
+        <li><a href="./royal-family.html">Royal Family</a></li>
+        <li><a href="./assets.html">Royal Assets</a></li>
+        <li><a href="./contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="title">
+        <img id="title-img" src="./imgs/title-img.jpg" alt="title-background"> 
+        <h1>
+      WELCOME TO THE ROYAL KINGDOM OF COLCHIS
+        </h1>
+    </div>
+
+    <div class="about">
+      <h2>About the Kingdom</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nibh mi, tristique in pretium ut, dictum eget nunc. Praesent nisi erat, blandit ultrices viverra in, auctor non risus. Phasellus lobortis lobortis imperdiet. Donec varius elit non nibh mollis pretium. Aenean laoreet quam nec nibh suscipit tempor. Donec in odio blandit, euismod sem quis, tristique mauris. Suspendisse non urna rutrum velit sollicitudin porttitor eget vel dolor. Aliquam aliquam enim ligula. Donec ac odio sed lorem aliquam feugiat at ac lectus. Vestibulum sed molestie nunc. Maecenas eget justo ac mi tristique laoreet. Ut urna massa, volutpat vitae velit consectetur, pretium posuere ligula. Proin non orci justo. Nullam vulputate nibh eros, ut pharetra est tempor non. Vestibulum iaculis facilisis enim ut suscipit. Pellentesque id augue ac urna feugiat consequat.</p>
+    </div>
+
+    <div class="footer">
+      Copyright &copy; Me, Myself and I
+    </div>
+
+    <script>
+      function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+      }
+
+      window.onclick = function(event) {
+if (!event.target.matches('.dropbtn')) {
+  var dropdowns = document.getElementsByClassName("dropdown-content");
+  var i;
+  for (i = 0; i < dropdowns.length; i++) {
+    var openDropdown = dropdowns[i];
+    if (openDropdown.classList.contains('show')) {
+      openDropdown.classList.remove('show');
+    }
+  }
+}
+}
+  </script>
+  </body>
+</html>

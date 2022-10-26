@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Royal Family</title>
+    <link href="stylesheet.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div class="header">
+        <img id="logo" src="./imgs/greek-symbol-royaltyfree.jpg" alt="header logo">
+        
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Sources</button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="https://pixabay.com/photos/acropolis-athens-greece-parthenon-5426750/">Acropolis picture</a>
+              <a href="https://www.pexels.com/fr-fr/photo/art-statue-sculpture-antiquite-13097962/">Queen Idyia</a>
+              <a href="https://www.pexels.com/fr-fr/photo/art-statue-sculpture-beton-11055150/">Princess Madeas</a>
+              <a href="https://www.pexels.com/fr-fr/photo/art-blanc-statue-visage-1887920/">King Aeetes</a>
+              <a href="https://pixabay.com/photos/romans-gladiator-spear-hoplite-60601/">Hoplite</a>
+            </div>
+        </div>
+        
+        <ul id="horizontal-list">
+            <li><a href="./index.html">About</a></li>
+            <li><a href="./royal-family.html">Royal Family</a></li>
+            <li><a href="./assets.html">Royal Assets</a></li>
+            <li><a href="./contact.html">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+
+        <div class="royal-title">
+            <h2>
+                The Royal Family
+            </h2>
+        </div>
+
+        <div class="card-container">
+
+            <div class="card">
+                <img id="card-img" src="./imgs/king.webp" alt="king aeetes">
+                <div class="card-text">
+                    <p>King Aeetes</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img id="card-img" src="./imgs/princess 1.webp" alt="princess madeas">
+                <div class="card-text">
+                    <p>Princess Madeas</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img id="card-img" src="./imgs/princess2.webp" alt="queen idyia">
+                <div class="card-text">
+                    <p>Queen Idyia</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer">
+        Copyright &copy; Me, Myself and I
+    </div>
+
+    <script>
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+    </script>
+    
+</body>
+</html>

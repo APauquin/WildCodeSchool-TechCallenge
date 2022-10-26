@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Royal Assets</title>
+    <link href="stylesheet.css" rel="stylesheet" type="text/css">
+  </head>
+
+  <body>
+
+    <div class="header">
+
+      <img id="logo" src="./imgs/greek-symbol-royaltyfree.jpg" alt="header logo">
+      
+      <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">Sources</button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="https://pixabay.com/photos/acropolis-athens-greece-parthenon-5426750/">Acropolis picture</a>
+          <a href="https://www.pexels.com/fr-fr/photo/art-statue-sculpture-antiquite-13097962/">Queen Idyia</a>
+          <a href="https://www.pexels.com/fr-fr/photo/art-statue-sculpture-beton-11055150/">Princess Madeas</a>
+          <a href="https://www.pexels.com/fr-fr/photo/art-blanc-statue-visage-1887920/">King Aeetes</a>
+          <a href="https://pixabay.com/photos/romans-gladiator-spear-hoplite-60601/">Hoplite</a>
+        </div>
+      </div>
+      
+      <ul id="horizontal-list">
+        <li><a href="./index.html">About</a></li>
+        <li><a href="./royal-family.html">Royal Family</a></li>
+        <li><a href="./assets.html">Royal Assets</a></li>
+        <li><a href="./contact.html">Contact Us</a></li>
+      </ul>
+      
+    </div>
+
+    <div class="assets-container">
+
+        <h2>
+            The Kingdom's Royal Assets
+        </h2>
+
+        <table>
+            <tr>
+              <th>Asset Name</th>
+              <th>Number</th>
+              <th>Worth</th>
+            </tr>
+            <tr>
+              <td>Golden fleece</td>
+              <td>1</td>
+              <td>The prosperity of the kingdom</td>
+            </tr>
+            <tr>
+              <td>Sleepless dragon</td>
+              <td>1</td>
+              <td>Useless</td>
+            </tr>
+            <tr>
+                <td>Castle</td>
+                <td>1</td>
+                <td>10000 Attic talents</td>
+            </tr>
+            <tr>
+                <td>Villages</td>
+                <td>30</td>
+                <td>5000 Attic talents</td>
+            </tr>
+            <tr>
+                <td>Soldiers</td>
+                <td>3000</td>
+                <td>1000 Attic talents</td>
+            </tr>
+            <tr>
+                <td>Vineyards</td>
+                <td>1000 Acres</td>
+                <td>2500 Attic talents</td>
+            </tr>
+          </table>
+
+    </div>
+
+    <div class="footer">
+      Copyright &copy; Me, Myself and I
+    </div>
+    
+    <script>
+      function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+      }
+
+      window.onclick = function(event) {
+if (!event.target.matches('.dropbtn')) {
+  var dropdowns = document.getElementsByClassName("dropdown-content");
+  var i;
+  for (i = 0; i < dropdowns.length; i++) {
+    var openDropdown = dropdowns[i];
+    if (openDropdown.classList.contains('show')) {
+      openDropdown.classList.remove('show');
+    }
+  }
+}
+}
+  </script>
+  </body>
+</html>
